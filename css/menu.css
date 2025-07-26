@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    height: 100vh;
+}
+
+/*Menu*/
+.menu{
+    background-color: rgb(247, 131, 131);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    padding: 150px;
+    position: relative;
+}
+.legend-menu{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    display: flex;
+    gap: 20px;
+}
+.legend-menu p{
+    font-size: 24px;
+}
+.menu-tarjeta{
+    background-color: #333;
+    width: 200px;
+    height: 260px;
+}
+.menutarjeta-link{
+    background-color: #48e;
+    width: inherit;
+    height: inherit;
+    transform: translate(-8px, -8px);
+    padding: 20px;
+}
+.menu-link-a img{
+    width: 100%;
+}
+.menutarjeta-link p{
+    text-align: center;
+    font-size: 24px;
+}
+
+.menu-tarjeta:hover .menutarjeta-link{
+    transform: translate(0px, 0px);
+}
+
+.efecto-cerrar{
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}

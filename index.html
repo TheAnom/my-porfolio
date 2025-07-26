@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Jeferson</title>
+</head>
+
+<body>
+
+    <audio id="backgroundAudio"></audio>
+
+    <!-- Menu -->
+    <section class="menu">
+
+        <div class="legend-menu">
+            <img class="boton-cerrar-menu" src="./assets/icons/close.svg" alt="">
+            <p>Menu</p>
+        </div>
+
+        <!-- sobre -->
+        <div class="menu-tarjeta">
+            <div class="menutarjeta-link">
+                <a class="menu-link-a" href="#">
+                    <img src="./assets/icons/about.svg" alt="about">
+                </a>
+                <p>About</p>
+            </div>
+        </div>
+
+        <div class="menu-tarjeta">
+            <div class="menutarjeta-link">
+                <a class="menu-link-a" href="#">
+                    <img src="./assets/icons/projects.svg" alt="about">
+                </a>
+                <p>Projects</p>
+            </div>
+        </div>
+
+        <div class="menu-tarjeta">
+            <div class="menutarjeta-link">
+                <a class="menu-link-a" href="#">
+                    <img src="./assets/icons/cv.svg" alt="about">
+                </a>
+                <p>CV</p>
+            </div>
+        </div>
+
+        <div class="menu-tarjeta">
+            <div class="menutarjeta-link">
+                <a class="menu-link-a" href="#">
+                    <img src="./assets/icons/write.svg" alt="about">
+                </a>
+                <p>Writings</p>
+            </div>
+        </div>
+
+        <div class="menu-tarjeta">
+            <div class="menutarjeta-link">
+                <a class="menu-link-a" href="#">
+                    <img src="./assets/icons/contact.svg" alt="about">
+                </a>
+                <p>Contact</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Efecto de television -->
+    <section class="glass">
+        <canvas id="noiseCanvas"></canvas>
+        <div class="dark-overlay"></div>
+        <div class="scanline"></div>
+    </section>
+
+
+    <section class="parent">
+
+        <!-- Encabezado -->
+        <div class="div1">
+
+            <div class="div1-header">
+                <div class="div1-header-imguser">
+                    <img src="./assets/img/jef.png" alt="jef">
+                </div>
+                <p class="div1-header-title">Jeferson EH</p>
+            </div>
+
+            <!-- Boton menu -->
+            <div class="div1-menu">
+                <div class="div1-menu-btnfondo">
+                    <div class="btnfondo-div1-div"></div>
+                    <div class="btnfondo-div1-div"></div>
+                    <div class="btnfondo-div1-div"></div>
+                    <div class="btnfondo-div1-div"></div>
+                </div>
+            </div>
+
+            <!-- boton musica -->
+            <div>
+                <div class="toggle-cont">
+                    <input class="toggle-input" id="toggle" name="toggle" type="checkbox" />
+                    <label class="toggle-label" for="toggle">
+                        <div class="cont-label-play">
+                            <span class="label-play"></span>
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- seccion de simulacion de tipeo -->
+
+        <!-- ...existing code... -->
+        <div class="div2">
+            <div class="typewriter distorsion-letra" id="typewriter"></div>
+            <p id="final-text" class="slide-up" style="text-align: right; width: 100%;">
+                I love reading lines of code as if they <br> were verses in a poem. <br><br> <span
+                    class="slide-up-jefdeveloper">Self-taught developer</span>
+            </p>
+            <div id="color-box" class="color-box">
+                <div class="moving-container" id="moving-container">
+                    <div class="moving-div" id="mv0"><img src="./assets/icons/c.svg" alt=""></div>
+                    <div class="moving-div" id="mv1"><img src="./assets/icons/python.svg" alt=""></div>
+                    <div class="moving-div" id="mv2"><img src="./assets/icons/linux.svg" alt=""></div>
+                    <div class="moving-div" id="mv3"><img src="./assets/icons/git.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- ...existing code... -->
+
+        <!-- Seccion de fotografia -->
+        <div class="div3 glitch-container">
+            <img src="./assets/img/jef-complete.png" alt="imagen distorsionada" class="glitch-img" id="glitchSource">
+            <canvas id="glitchCanvas"></canvas>
+        </div>
+    </section>
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
