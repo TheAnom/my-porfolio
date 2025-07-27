@@ -559,3 +559,54 @@ audio {
   display: none;
   /* Oculta el reproductor */
 }
+
+/* Texto de demo */
+.version-demo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+/* ---------------- proyectos ----------------- */
+
+
+.parent-proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+
+  height: 100vh;
+}
+
+.parent-proyectos-div1{
+  background-color: yellowgreen;
+}
+
+.parent-proyectos-div2 {
+  grid-row: span 5 / span 5;
+
+  background-color: #385ACF;
+}
+
+.parent-proyectos-div3 {
+  grid-row: span 2 / span 2;
+
+  background-color: #f0a6ca;
+}
+
+.parent-proyectos-div4 {
+  grid-row-start: 4;
+
+  background-color: #f9564f;
+}
+
+.parent-proyectos-div5 {
+  grid-row-start: 5;
+
+  background-color: #f0a6ca;
+}
